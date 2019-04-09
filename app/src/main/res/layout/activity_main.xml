@@ -9,24 +9,21 @@
 
     <TextView
             android:id="@+id/alertTitle"
-            android:text="Alert intrusion"
-            android:textSize="28sp"
-            android:visibility="gone"
+            android:text="@string/Alert_Intrusion_Message"
             tools:visibility="visible"
-            android:textColor="@android:color/holo_red_dark"
+            style="@style/alertMessageStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/test"
-    />
+            app:layout_constraintBottom_toTopOf="@id/test"/>
 
     <TextView
-            android:textAlignment="center"
             android:id="@+id/test"
+            style="@style/textStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            tools:text="Hello World!"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -34,14 +31,12 @@
 
     <Button
             android:id="@+id/btnStopAlarm"
-            android:text="stop Alarm"
-            android:padding="6dp"
-            android:textColor="@android:color/white"
+            tools:text="alarm !!!"
+            style="@style/btnStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/test"
-            android:background="@android:color/holo_blue_dark"/>
+            app:layout_constraintTop_toBottomOf="@id/test"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
