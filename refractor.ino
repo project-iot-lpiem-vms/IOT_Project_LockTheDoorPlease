@@ -79,7 +79,7 @@ void loop() {
   ibutton.reset();
 
   //Verification si Alarm is ON Avec FireBase
-  firebaseResult = firebaseGet("result");
+  firebaseResult = firebaseGet("alarm");
   
   if (firebaseResult == "on") {
     if (!identifie) {
@@ -91,7 +91,7 @@ void loop() {
           Serial.println("SONNE");
 
            //Verification si Alarm is ON Avec FireBase
-          firebaseResult = firebaseGet("result");
+          firebaseResult = firebaseGet("alarm");
           if (firebaseResult == "off") {
             return;
           }
@@ -117,7 +117,7 @@ void loop() {
             }
             
             //Verification si Alarm is ON Avec FireBase
-            firebaseResult = firebaseGet("result");
+            firebaseResult = firebaseGet("alarm");
             if (firebaseResult == "off") {
               return;
             }
@@ -187,7 +187,7 @@ void loop() {
         isStarting = 0;
         firebaseResult = firebaseGet("message");
         Serial.println("set : message Alarm ON");
-        Firebase.setString("message", "Alarm ON");
+        Firebase.setString("message", "Alarm OFF");
         delay(100);
         Serial.println("RESULTAT:" + firebaseResult);
         Serial.print(Firebase.success());
@@ -218,7 +218,7 @@ void loop() {
       Serial.println("set : message Alarm ON");
       Firebase.setString("message", "Alarm ON");
       Serial.println("set : result on");
-      Firebase.setString("result", "on");
+      Firebase.setString("alarm", "on");
       delay(100);
       Serial.println("RESULTAT:" + firebaseResult);
       Serial.print(Firebase.success());
