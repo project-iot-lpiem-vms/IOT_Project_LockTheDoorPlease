@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">IOT_PleaseLockTheDoor</string>
+    <string name="alarmOFF">Alarm OFF</string>
+    <string name="activateAlarm">Activer Alarm</string>
+    <string name="deactivateAlarm">Désactiver Alarm</string>
+    <string name="alarmON">Alarm ON</string>
+    <string name="intrusionMessage">À %s le %s</string>
+    <string name="Alert_Intrusion_Message">Alert intrusion</string>
 </resources>

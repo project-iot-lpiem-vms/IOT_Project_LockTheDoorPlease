@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "492280912202",
+    "firebase_url": "https://lockthedoorplease-f94c0.firebaseio.com",
+    "project_id": "lockthedoorplease-f94c0",
+    "storage_bucket": "lockthedoorplease-f94c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492280912202:android:ca87ba4eea18ab82",
+        "android_client_info": {
+          "package_name": "com.lpiem.iot_pleaselockthedoor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492280912202-fqbfbqt8un0n562alagftj6ssm6h9tse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lpiem.iot_pleaselockthedoor",
+            "certificate_hash": "836645344dbfe4fe237ba38a3b49f857ffad3268"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7r3OKM73CSnitHWIUPBRzc_R1hMU_k3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492280912202-8j6a6h6gaseg705k4erhau31u7ne793b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
